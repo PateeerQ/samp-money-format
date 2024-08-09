@@ -12,7 +12,7 @@
 
 #define samp_money_format_included
 
-#define MONEYFMT_OUTPUT         16
+#define MONEYFMT_OUTPUT         24
 #define MONEYFMT_CENTPLACEMENT  2
 
 #if defined MONEYFMT_ALWAYS_USECENT
