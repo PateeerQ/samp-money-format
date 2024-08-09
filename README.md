@@ -4,7 +4,6 @@ SAMP money formatting for Global Currencies - Easy to use
 ## Function
 
 ```pawn
-// Function
 FormatMoney(value, currency, enable_cent, enable_type);
 ```
 ```
