@@ -20,13 +20,13 @@ main ()
       money = 500000
     ;
 
-    printf("%s", FormatMoney(money, MONEYFMT_EUR);
+    printf("%s", FormatMoney(money, MONEYFMT_EUR));
     // Expected output -> €500,000
 
-    printf("%s", FormatMoney(money, MONEYFMT_IDR, _, true);
+    printf("%s", FormatMoney(money, MONEYFMT_IDR, _, true));
     // Expected output -> IDR500,000
 
-    printf("%s", FormatMoney(money, MONEYFMT_EUR, true, true);
+    printf("%s", FormatMoney(money, MONEYFMT_EUR, true, true));
     // Expected output -> USD$5,000.00
 }
 ````
