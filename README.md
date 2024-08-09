@@ -7,6 +7,10 @@ SAMP money formatting for Global Currencies - Easy to use
 // Function
 FormatMoney(value, currency, enable_cent, enable_type);
 ```
+```
+    (!) enable_cent. by enabling this, you will use last 2 digits from your amount values. ex amount: 14000 -> output: $140.00
+    (!) enable_type. by enabling this, you will get full money format. ex amount: 14000 -> USD$140.00
+```
 
 ## Example How to use
 
