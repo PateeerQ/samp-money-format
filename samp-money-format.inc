@@ -55,13 +55,13 @@ new
 
 */
 
-PATEEER_FormatMoney(Float:amount, currency = MONEYFMT_USD, enable_cent = MONEYFMT_USECENT_DEFAULT, enable_type = false, const delimiter[2] = ".") 
+stock PATEEER_FormatMoney(amount, currency = MONEYFMT_USD, enable_cent = MONEYFMT_USECENT_DEFAULT, enable_type = false, const delimiter[2] = ".") 
 {
 	new 
 		txt[MONEYFMT_OUTPUT]
 	;
 
-	format(txt, MONEYFMT_OUTPUT, "%d", floatround(amount));
+	format(txt, MONEYFMT_OUTPUT, "%d", amount);
 
 	new 
         l = strlen(txt)
@@ -70,11 +70,14 @@ PATEEER_FormatMoney(Float:amount, currency = MONEYFMT_USD, enable_cent = MONEYFM
 	if(l > MONEYFMT_CENTPLACEMENT && enable_cent) 
         strins(txt, delimiter, l - MONEYFMT_CENTPLACEMENT);
 
-	for(new i = 1; i < l; i++)
-    {
-        if((i % 3) == 0) 
-            strins(txt, moneyfmt_Symbol[currency][MONEYFMT_GROUPING], l - (i + (enable_cent ? MONEYFMT_CENTPLACEMENT : 0)));
-    }
+    if(l > 5 - (enable_cent ? 0 : 2)) 
+        strins(txt, moneyfmt_Symbol[currency][MONEYFMT_GROUPING], l - 5 + (enable_cent ? 0 : 2));
+
+    if(l > 8 - (enable_cent ? 0 : 2)) 
+        strins(txt, moneyfmt_Symbol[currency][MONEYFMT_GROUPING], l - 8 + (enable_cent ? 0 : 2));
+    
+    if(l > 11 - (enable_cent ? 0 : 2)) 
+        strins(txt, moneyfmt_Symbol[currency][MONEYFMT_GROUPING], l - 11 + (enable_cent ? 0 : 2));
 
 	if(l <= 2 && enable_cent) 
         format(txt, MONEYFMT_OUTPUT, "%s0.%s", enable_type ? moneyfmt_Symbol[currency][MONEYFMT_TYPE] : moneyfmt_Symbol[currency][MONEYFMT_SYMBOL], txt);
