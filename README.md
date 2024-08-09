@@ -17,11 +17,11 @@ FormatMoney
 main ()
 {
     new
-      money = 500000
+          money = 500000
     ;
 
     printf("%s", FormatMoney(money, MONEYFMT_EUR));
-    // Expected output -> €500,000
+    // Expected output -> €500,000 (may declares unknown symbol since console doesn't supported several symbol like €)
 
     printf("%s", FormatMoney(money, MONEYFMT_IDR, _, true));
     // Expected output -> IDR500,000
