@@ -26,7 +26,7 @@ main ()
     printf("%s", FormatMoney(money, MONEYFMT_IDR, _, true));
     // Expected output -> IDR500,000
 
-    printf("%s", FormatMoney(money, MONEYFMT_EUR, true, true));
+    printf("%s", FormatMoney(money, MONEYFMT_USD, true, true));
     // Expected output -> USD$5,000.00
 }
 ````
