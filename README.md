@@ -12,7 +12,7 @@ FormatMoney(value, currency, enable_cent, enable_type);
 (!) enable_type. by enabling this, you will get full money format. ex amount: 14000 -> USD$140.00
 ```
 
-## Existeing Currencies
+## Existing Currencies
 ```
 MONEYFMT_USD
 MONEYFMT_EUR
