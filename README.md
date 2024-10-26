@@ -1,5 +1,5 @@
 # samp-money-format
-SAMP money formatting for Global Currencies - Easy to use
+SAMP money formatting for a few Global Currencies
 
 ## Function
 
