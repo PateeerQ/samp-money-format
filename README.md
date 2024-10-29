@@ -16,11 +16,11 @@ by defining MONEYFMT_ALWAYS_USECENT before including this, default value for ena
 ## Existing Currencies
 
 ```
-MONEYFMT_USD
-MONEYFMT_EUR
-MONEYFMT_GBP
-MONEYFMT_IDR
-MONEYFMT_JPY
+MONEYFMT_USD (US Dollar)
+MONEYFMT_EUR (Euro)
+MONEYFMT_GBP (Pounds)
+MONEYFMT_IDR (Rupiah)
+MONEYFMT_JPY (Yen)
 ```
 
 ## Example How to use
