@@ -39,7 +39,7 @@ enum
 
 new
     const moneyfmt_Symbol[][][] =
-    { /* TYPE, SYMBOL, GROUPING */
+    {   // TYPE, SYMBOL, GROUPING
         {"USD$", "$", ","},
         {"EUR", "€", ","},
         {"GBP", "£", ","},
